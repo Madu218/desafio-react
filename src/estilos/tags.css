@@ -1,0 +1,31 @@
+img {
+    width: 3.5rem;
+}
+
+.pokedex {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    margin-bottom: 5rem;
+}
+
+.pokedex h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.5);
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}

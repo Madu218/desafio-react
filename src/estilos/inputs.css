@@ -1,0 +1,28 @@
+button {
+    cursor: pointer;
+}
+
+button, input {
+    color: white;
+    border: solid 3px rgb(92, 203, 255);
+    background-color: rgba(92, 203, 255, 0.5);
+    box-shadow: 0 0 10px rgb(95, 95, 95);
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 10px;
+    transition: .3s;
+}
+
+button:hover {
+    color: rgb(13, 132, 187);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+button:active {
+    background-color: rgba(252, 196, 196, 0.5);
+}
+
+input {
+    margin-right: .5rem;
+    outline: none;
+}
