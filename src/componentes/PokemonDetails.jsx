@@ -68,6 +68,7 @@ export default function PokemonDetails() {
             <div className="battle-pokemon">
                 <Pokemon
                     func={setInfos}
+                    battleInfos={battleInfos["my-pokemon"]}
                     isMe={true}
                 />
             </div>
@@ -79,6 +80,7 @@ export default function PokemonDetails() {
             <div className="battle-pokemon">
                 <Pokemon
                     func={setInfos}
+                    battleInfos={battleInfos["opponent-pokemon"]}
                     isMe={false}
                 />
             </div>

@@ -19,7 +19,7 @@ export default function BattleModal(props) {
         let defensor = atacante == 0 ? 1 : 0;
 
 
-        relatorio.push(<div className="rounds">Round {index} &#9876;&#65039;</div>);
+        relatorio.push(<div className="rounds" key={index}>Round {index} &#9876;&#65039;</div>);
         
         let dano = pokemons[atacante][prefix1 + "attack"] - pokemons[defensor][prefix2 + "defense"];
         dano = dano > 0 ? dano : 0;

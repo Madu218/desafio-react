@@ -11,7 +11,6 @@ export default function Pokedex() {
 		.then((response) => {
             setPokemonList(response.data.results.map((pokemon) => {
                 return ([
-                    ...pokemonList,
                     <PokemonTag
                         key={pokemon.name}
                         name={pokemon.name}

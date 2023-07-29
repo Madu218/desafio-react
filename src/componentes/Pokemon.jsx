@@ -24,13 +24,40 @@ export default function Pokemon(props) {
     return(
         <>
             <div>
-                <div className="title">Nome:</div>
-                <div className='description'>{myPokemon.name}</div>
+                <div className="title" id="name">{myPokemon.name}</div>
+                <div className='description'>{myPokemon.types}</div>
             </div>
 
-            <div>
-                <div className="title">Tipo:</div>
-                <div className='description'>{myPokemon.types}</div>
+            <div className="stats">
+                <div>
+                    <div className="title">Hp:</div>
+                    <div className='description'>{props.battleInfos.hp}</div>
+                </div>
+
+                <div>
+                    <div className="title">Attack:</div>
+                    <div className='description'>{props.battleInfos.attack}</div>
+                </div>
+
+                <div>
+                    <div className="title">Defense:</div>
+                    <div className='description'>{props.battleInfos.defense}</div>
+                </div>
+
+                <div>
+                    <div className="title">Speed:</div>
+                    <div className='description'>{props.battleInfos.speed}</div>
+                </div>
+
+                <div>
+                    <div className="title">Special attack:</div>
+                    <div className='description'>{props.battleInfos.special_attack}</div>
+                </div>
+
+                <div>
+                    <div className="title">Special defense:</div>
+                    <div className='description'>{props.battleInfos.special_defense}</div>
+                </div>
             </div>
             <img src={myPokemon.img} alt="chosen pokémon" className={myPokemon.id}/>
 

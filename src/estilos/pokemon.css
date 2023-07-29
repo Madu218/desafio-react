@@ -1,18 +1,24 @@
 .battle-pokemon img {
     width: 13rem;
-    margin-bottom: -1rem;
+    margin-bottom: 1rem;
 }
 
 .battle-pokemon {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .battle-pokemon .title {
     font-family: pokemonFont;
     font-weight: bold;
     font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+.battle-pokemon #name {
+    font-size: 1.8rem;
 }
 
 .battle-pokemon .description {
@@ -22,6 +28,19 @@
 
 .my-pokemon {
     transform: scaleX(-1);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 320px;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
